@@ -1,0 +1,17 @@
+# 运行时数据（首次启动生成）
+data/
+memory/
+settings.json
+
+# NapCat（首次启动自动拉取）
+NapCat/
+
+# 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 构建
+build/
+dist/
+*.spec

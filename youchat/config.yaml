@@ -1,0 +1,27 @@
+model:
+  base_url: https://api.deepseek.com/v1
+  api_key: ''
+  chat_model: deepseek-chat
+  embedding_model: ''
+storage:
+  db_path: data/youchat.db
+  characters_dir: characters
+engine:
+  episodic_buffer_size: 24
+  compact_after: 24
+  max_recalled_memories: 5
+retrieval:
+  vector_threshold: 0.45
+  semantic_slots: 2
+  use_fuzzy_fallback: false
+context_budget:
+  core: 900
+  long_term: 1000
+  short_term: 1500
+  per_entry_chars: 120
+consistency:
+  checker: auto
+ollama:
+  base_url: http://127.0.0.1:11434/v1
+  chat_model: qwen2.5:7b
+  embed_model: nomic-embed-text
